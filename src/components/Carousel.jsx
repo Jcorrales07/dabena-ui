@@ -36,17 +36,17 @@ function Carousel() {
     }
 
     return (
-        <div className="max-w-[1400px] h-[350px] md:h-[512px] w-full mt-0 m-auto py-5 px-4 relative group">
+        <div className="max-w-[1400px] h-[350px] md:h-[512px] w-full mt-0 m-auto relative group">
             <div
                 style={{
                     backgroundImage: `url('${slides[currentSlide].url}')`,
                 }}
-                className="w-full h-full rounded-2xl bg-center bg-cover transition-all duration-500"
+                className="w-full h-full bg-center bg-cover transition-all duration-500"
             >
-                <div className="hidden absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer group-hover:block" onClick={prevSlide}>
+                <div className="hidden absolute top-[50%] -translate-x-0 translate-y-[-50%] left-2 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer group-hover:block" onClick={prevSlide} on>
                     <IoIosArrowBack size={30} />
                 </div>
-                <div className="hidden absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer group-hover:block" onClick={nextSlide}>
+                <div className="hidden absolute top-[50%] -translate-x-0 translate-y-[-50%] right-2 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer group-hover:block" onClick={nextSlide}>
                     <IoIosArrowForward size={30} />
                 </div>
             </div>
