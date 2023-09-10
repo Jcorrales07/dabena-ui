@@ -21,7 +21,8 @@ function Navbar() {
             </div>
 
             <nav className={showMenu ? `hidden`: `fixed top-20 right-0 bg-white p-2 h-screen w-56`}>
-                <ul className="flex flex-col">
+                <ul className="flex flex-col text-black">
+                    {showMenu}
                     <li className="mb-3 px-5 py-3 hover:bg-green-700 cursor-pointer text-black hover:text-white">
                         Inicio
                     </li>
