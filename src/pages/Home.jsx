@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import {Navbar, Footer, Carousel} from '../components'  
 
 function Home() {
   return (
     <div className='bg-slate-600 h-screen text-white'>
         <Navbar/>
+        <Carousel/>
         <Footer/>
     </div>
   )
